@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+code {
+  /* for Japanese */
+  font-family: Consolas, Meiryo, monospace !important;
+}
+
+p {
+  text-align: left;
+}
+
+p.wrap-img {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+#img1 {
+  max-width: 50%;
+  max-height: 50%;
+}

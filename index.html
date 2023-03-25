@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample of reveal.js 3.1.0</title>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/theme/black.min.css" id="theme">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/css/zenburn.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match(/print-pdf/gi) ?
+    '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/print/pdf.min.css' :
+    '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/print/paper.min.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown="presentation.md"
+             data-separator="\n---\n$"
+             data-separator-vertical="\n--\n">
+    </section>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/head.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/js/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+  transition: 'slide',
+  dependencies: [
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/lib/js/classList.min.js',
+      condition: function() { return !document.body.classList; }
+    },
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/markdown/marked.min.js',
+      condition: function() { return !!document.querySelector( '[data-markdown]' ); }
+    },
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/markdown/markdown.min.js',
+      condition: function() { return !!document.querySelector( '[data-markdown]' ); }
+    },
+
+    // NOTE: removed "condition: function() { return !!document.querySelector( 'pre code' ); }"
+    // cf. https://github.com/hakimel/reveal.js/issues/1225
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/highlight/highlight.min.js',
+      async: true,
+      callback: function() { hljs.initHighlightingOnLoad(); }
+    },
+
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/zoom-js/zoom.min.js',
+      async: true
+    },
+    {
+      src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/plugin/notes/notes.min.js',
+      async: true
+    }
+  ]
+});
+</script>
+</body>
+</html>
