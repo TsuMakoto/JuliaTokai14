@@ -78,13 +78,13 @@ Dockerイメージを作成して、自分で環境を用意する必要があ�
 
 --
 
-### DockerイメージをECRへpush
+### 4.1 DockerイメージをECRへpush
 ECRはDockerイメージのレジストリ
 ![ECR](img/ECR.png)
 
 --
 
-### ECRへログイン+push
+### 4.2 ECRへログイン+push
 
 ```bash
 # リポジトリの作成
@@ -102,7 +102,7 @@ docker push [AWSアカウントID].dkr.ecr.us-west-2.amazonaws.com/julia-lambda:
 
 --
 
-### Lambda関数の作成
+### 4.3 Lambda関数の作成
 さっき作ったイメージを使う
 ![ECR](img/Lambda.png)
 
@@ -113,7 +113,7 @@ aws lambda create-function --function-name julia-lambda-func --image-uri [AWSア
 
 --
 
-### API Gatewayを作成
+### 4.4 API Gatewayを作成
 APIを簡単に構築し、デプロイすることができる
 
 ![ECR](img/APIGateway.png)
@@ -132,7 +132,7 @@ aws apigateway put-method --rest-api-id [API ID] --resource-id [helloのリソ�
 
 --
 
-### Lambda関数とAPI Gatewayを紐付け
+### 4.5 Lambda関数とAPI Gatewayを紐付け
 
 ![Lambda+APIGateway](img/Lambda+APIGateway.png)
 
@@ -147,18 +147,18 @@ aws apigateway put-integration --rest-api-id [API ID] --resource-id [リソー�
 
 --
 
-### デプロイ
+### 4.6 デプロイ
 ```bash
 aws apigateway create-deployment --rest-api-id [API ID] --stage-name dev
 ```
 
 ---
 
-## APIへアクセス
+## 5. APIへアクセス
 
 --
 
-### 実行する関数
+### 5.1 実行する関数
 
 ```julia
 module JuliaLambdaFunc
@@ -177,14 +177,16 @@ end
 
 --
 
-### アクセス
+### 5.2 アクセス
 
 `https://[API ID].execute-api.us-west-2.amazonaws.com/dev/hello`
 
 
 ---
 
-## サンプルについて
+## 6. サンプルについて
+
+--
 
 - https://github.com/TsuMakoto/JuliaTokai14/blob/main/scripts/create.sh
 
@@ -192,7 +194,7 @@ end
 
 ---
 
-## おわり!!
+## 7. おわり!!
 
 JuliaでAPIサーバーの公開ができた！
 
