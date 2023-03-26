@@ -181,11 +181,6 @@ end
 
 `https://[API ID].execute-api.us-west-2.amazonaws.com/dev/hello`
 
----
-
-## おわり!!
-
-JuliaでAPIサーバーの公開ができた！
 
 ---
 
@@ -194,5 +189,11 @@ JuliaでAPIサーバーの公開ができた！
 - https://github.com/TsuMakoto/JuliaTokai14/blob/main/scripts/create.sh
 
 - ここに今回のサンプルをおいてるので、参考にどうぞ
+
+---
+
+## おわり!!
+
+JuliaでAPIサーバーの公開ができた！
 
 
