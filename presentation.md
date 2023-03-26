@@ -7,7 +7,6 @@
 - 塚本真人
 - 株式会社Fusic
 - 普段はRoRでweb開発したり、Pythonで数理モデルの開発したりしてます
-- 趣味: ポケモン
 - github: https://github.com/TsuMakoto
 - Twitter: @mako_tsuka
 - jl.devというユーザーグループで管理人しています
