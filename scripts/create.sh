@@ -142,3 +142,5 @@ aws apigateway create-deployment \
   --rest-api-id $api_id \
   --stage-name dev
 
+
+echo endpoint-url: https://${api_id}.execute-api.us-west-2.amazonaws.com/dev/hello

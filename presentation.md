@@ -184,6 +184,16 @@ end
 
 ---
 
-## おわり
+## おわり!!
 
 JuliaでAPIサーバーの公開ができた！
+
+---
+
+## めんどくさい？
+
+- https://github.com/TsuMakoto/JuliaTokai14/blob/main/scripts/create.sh
+
+- ここに今回のサンプルをおいてるので、参考にどうぞ
+
+
