@@ -179,7 +179,7 @@ end
 
 ### アクセス
 
-`https://[API ID].execute-api.us-west-2.amazonaws.com/dev`
+`https://[API ID].execute-api.us-west-2.amazonaws.com/dev/hello`
 
 ---
 
