@@ -184,7 +184,7 @@ end
 
 ---
 
-## めんどくさい？
+## サンプルについて
 
 - https://github.com/TsuMakoto/JuliaTokai14/blob/main/scripts/create.sh
 
