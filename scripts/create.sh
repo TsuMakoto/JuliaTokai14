@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # lambda関数の定義
 app_name="julia-lambda-app"
